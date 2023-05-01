@@ -13,21 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384/storage_v2/_src_/database/first_db.bWA53w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384/storage_v2/_src_/database/first_db.bWA53w/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/controller/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/controller/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/controller/PeopleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/controller/PeopleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/dao/PersonDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/models/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/lib/hibernate-validator-6.1.6.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/lib/validation-api-2.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/springcourse/controller/PeopleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/springcourse/controller/PeopleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/springcourse/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/springcourse/dao/PersonDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/springcourse/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/springcourse/models/Person.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +210,7 @@
       <workItem from="1682872236539" duration="6710000" />
       <workItem from="1682881275922" duration="9188000" />
       <workItem from="1682960429104" duration="9661000" />
-      <workItem from="1682975584506" duration="3483000" />
+      <workItem from="1682975584506" duration="4501000" />
     </task>
     <servers />
   </component>
