@@ -1,5 +1,6 @@
 package ru.springcourse.controller;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.springcourse.dao.PersonDAO;
 import ru.springcourse.models.Person;
 
-import javax.validation.Valid;
+
 
 @Controller
 @RequestMapping("/people")
@@ -43,6 +44,7 @@ public class PeopleController {
                          BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
+            System.out.println("error");
             return "people/new";
         }
         personDAO.save(person);
