@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.45">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>1975</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1988</IntrospectionStateNumber>
       <ServerVersion>15.2</ServerVersion>
       <StartupTime>1681847068</StartupTime>
       <TimeZones>true ACDT
@@ -801,7 +801,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>1975</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1988</IntrospectionStateNumber>
       <ObjectId>16418</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4219,7 +4219,7 @@ false Zulu
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1975</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1988</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4292,7 +4292,7 @@ false Zulu
     </table>
     <table id="274" parent="262" name="person">
       <ObjectId>16589</ObjectId>
-      <StateNumber>1974</StateNumber>
+      <StateNumber>1987</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4649,18 +4649,25 @@ movie_id</ColNames>
       <StateNumber>1974</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="321" parent="274" name="person_email_key">
+    <column id="321" parent="274" name="address">
+      <DasType>varchar|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>1987</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="322" parent="274" name="person_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16595</ObjectId>
-      <StateNumber>1974</StateNumber>
+      <StateNumber>1985</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="322" parent="274" name="person_email_key">
+    <key id="323" parent="274" name="person_email_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16596</ObjectId>
       <StateNumber>1974</StateNumber>
