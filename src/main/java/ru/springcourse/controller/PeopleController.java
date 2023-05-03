@@ -48,7 +48,6 @@ public class PeopleController {
         personValidator.validate(person, bindingResult);
 
         if (bindingResult.hasErrors()) {
-            System.out.println("error");
             return "people/new";
         }
         personDAO.save(person);
