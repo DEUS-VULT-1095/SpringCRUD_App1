@@ -13,6 +13,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384/storage_v2/_src_/database/first_db.bWA53w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384/storage_v2/_src_/database/first_db.bWA53w/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/controller/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/controller/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/models/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +213,8 @@
       <workItem from="1682872236539" duration="6710000" />
       <workItem from="1682881275922" duration="9188000" />
       <workItem from="1682960429104" duration="9661000" />
-      <workItem from="1682975584506" duration="4501000" />
+      <workItem from="1682975584506" duration="5304000" />
+      <workItem from="1683068413672" duration="4106000" />
     </task>
     <servers />
   </component>
