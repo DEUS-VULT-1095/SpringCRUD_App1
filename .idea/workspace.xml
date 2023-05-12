@@ -10,12 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48c9cfd-b94e-42f0-b68f-1668a8edf549" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384/storage_v2/_src_/database/first_db.bWA53w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1aed738a-fdc6-4577-98ab-4b6c0066e384/storage_v2/_src_/database/first_db.bWA53w/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/dao/PersonDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ru/springcourse/dao/PersonDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/springcourse/dao/PersonDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/models/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +207,7 @@
       <workItem from="1682781724839" duration="1344000" />
       <workItem from="1682784387958" duration="2648000" />
       <workItem from="1682872236539" duration="4737000" />
+      <workItem from="1683923864691" duration="5877000" />
     </task>
     <servers />
   </component>
