@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.45">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>3429</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3439</IntrospectionStateNumber>
       <ServerVersion>15.2</ServerVersion>
       <StartupTime>1683798635</StartupTime>
       <TimeZones>true ACDT
@@ -801,7 +801,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>3429</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3439</IntrospectionStateNumber>
       <ObjectId>16418</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4227,7 +4227,7 @@ false Zulu
     <schema id="264" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>3429</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3439</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4312,7 +4312,7 @@ false Zulu
     </table>
     <table id="278" parent="264" name="person">
       <ObjectId>18277</ObjectId>
-      <StateNumber>3428</StateNumber>
+      <StateNumber>3438</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4730,7 +4730,13 @@ movie_id</ColNames>
       <StateNumber>3427</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="333" parent="278" name="person_pkey">
+    <column id="333" parent="278" name="mood">
+      <DasType>varchar|0s</DasType>
+      <Position>8</Position>
+      <StateNumber>3438</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="334" parent="278" name="person_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18281</ObjectId>
@@ -4739,7 +4745,7 @@ movie_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="334" parent="278" name="person_email_key">
+    <index id="335" parent="278" name="person_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18283</ObjectId>
@@ -4750,14 +4756,14 @@ movie_id</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="335" parent="278" name="person_pkey">
+    <key id="336" parent="278" name="person_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18282</ObjectId>
       <Primary>1</Primary>
       <StateNumber>3427</StateNumber>
       <UnderlyingIndexId>18281</UnderlyingIndexId>
     </key>
-    <key id="336" parent="278" name="person_email_key">
+    <key id="337" parent="278" name="person_email_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>18284</ObjectId>
       <StateNumber>3427</StateNumber>
