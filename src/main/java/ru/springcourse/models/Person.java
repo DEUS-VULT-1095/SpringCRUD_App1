@@ -23,6 +23,7 @@ public class Person {
     private int age;
 
     @Email(message = "Email should be valid")
+    @NotEmpty(message = "Should not be empty")
     @Column(name = "email")
     private String email;
 
