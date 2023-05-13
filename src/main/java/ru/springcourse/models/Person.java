@@ -2,8 +2,7 @@ package ru.springcourse.models;
 
 
 import jakarta.persistence.*;
-
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 
 @Entity
 @Table(name = "Person")
@@ -18,7 +17,7 @@ public class Person {
     @Size(min = 2, max = 30, message = "Name should be between 2 and 30 characters")
     @Column(name = "name")
     private String name;
-    @Min(value = 0, message = "Age should be greater than 0")
+    @Min(value = 1, message = "Age should be greater than 0")
     @Column(name = "age")
     private int age;
 
