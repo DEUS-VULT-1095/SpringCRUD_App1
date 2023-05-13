@@ -15,20 +15,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/controller/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/controller/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/repositories/PeopleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/springcourse/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/springcourse/services/PeopleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/controller/PeopleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/controller/PeopleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/models/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/repositories/PeopleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/repositories/PeopleRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/services/PeopleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/classes/ru/springcourse/services/PeopleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/views/people/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/views/people/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/CRUD-app1/WEB-INF/views/people/show.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/springcourse/controller/PeopleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/springcourse/controller/PeopleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ru/springcourse/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/springcourse/models/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/springcourse/services/PeopleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/springcourse/services/PeopleService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +38,7 @@
         <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -224,6 +222,8 @@
       <workItem from="1683923864691" duration="5877000" />
       <workItem from="1683934833977" duration="1360000" />
       <workItem from="1683936247783" duration="7401000" />
+      <workItem from="1683957292717" duration="5451000" />
+      <workItem from="1683962960518" duration="5683000" />
     </task>
     <servers />
   </component>
@@ -242,11 +242,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/ru/springcourse/services/ItemService.java</url>
           <line>27</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/springcourse/services/PeopleService.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

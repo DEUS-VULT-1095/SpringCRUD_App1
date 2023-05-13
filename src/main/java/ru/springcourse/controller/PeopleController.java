@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.springcourse.models.Person;
 import ru.springcourse.services.ItemService;
 import ru.springcourse.services.PeopleService;
-
+import ru.springcourse.util.PersonValidator;
 
 
 @Controller
@@ -18,21 +18,18 @@ public class PeopleController {
 
     private final PeopleService peopleService;
     private final ItemService itemService;
+    private final PersonValidator personValidator;
 
     @Autowired
-    public PeopleController(PeopleService peopleService, ItemService itemService) {
+    public PeopleController(PeopleService peopleService, ItemService itemService, PersonValidator personValidator) {
         this.peopleService = peopleService;
         this.itemService = itemService;
+        this.personValidator = personValidator;
     }
 
     @GetMapping()
     public String index(Model model) {
         model.addAttribute("people", peopleService.findAll());
-
-        itemService.findByItemName("Airpods");
-        itemService.findByOwner(peopleService.findAll().get(0));
-
-        peopleService.test();
         return "people/index";
     }
 
@@ -51,6 +48,8 @@ public class PeopleController {
     public String create(@ModelAttribute("person") @Valid Person person,
                          BindingResult bindingResult) {
 
+        personValidator.validate(person, bindingResult);
+
         if (bindingResult.hasErrors()) {
             return "people/new";
         }
@@ -68,6 +67,8 @@ public class PeopleController {
     public String update(@ModelAttribute("person") @Valid Person person,
                          BindingResult bindingResult,
                          @PathVariable("id") int id) {
+
+        personValidator.validate(person, bindingResult);
 
         if (bindingResult.hasErrors()) {
             return "people/edit";

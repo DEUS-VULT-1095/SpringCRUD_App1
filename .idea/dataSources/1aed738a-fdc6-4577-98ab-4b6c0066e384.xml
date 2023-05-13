@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.45">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>3406</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3429</IntrospectionStateNumber>
       <ServerVersion>15.2</ServerVersion>
       <StartupTime>1683798635</StartupTime>
       <TimeZones>true ACDT
@@ -801,7 +801,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>3406</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3429</IntrospectionStateNumber>
       <ObjectId>16418</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4227,7 +4227,7 @@ false Zulu
     <schema id="264" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>3406</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3429</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4252,8 +4252,8 @@ false Zulu
     </sequence>
     <sequence id="268" parent="264" name="item_id_seq">
       <DasType>integer|0s</DasType>
-      <ObjectId>18244</ObjectId>
-      <StateNumber>3401</StateNumber>
+      <ObjectId>18285</ObjectId>
+      <StateNumber>3428</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="269" parent="264" name="movie_movie_id_seq">
@@ -4264,8 +4264,8 @@ false Zulu
     </sequence>
     <sequence id="270" parent="264" name="person_id_seq">
       <DasType>integer|0s</DasType>
-      <ObjectId>18235</ObjectId>
-      <StateNumber>3400</StateNumber>
+      <ObjectId>18276</ObjectId>
+      <StateNumber>3427</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <table id="271" parent="264" name="actor">
@@ -4293,8 +4293,8 @@ false Zulu
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="275" parent="264" name="item">
-      <ObjectId>18245</ObjectId>
-      <StateNumber>3401</StateNumber>
+      <ObjectId>18286</ObjectId>
+      <StateNumber>3428</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4311,8 +4311,8 @@ false Zulu
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="278" parent="264" name="person">
-      <ObjectId>18236</ObjectId>
-      <StateNumber>3401</StateNumber>
+      <ObjectId>18277</ObjectId>
+      <StateNumber>3428</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4536,50 +4536,50 @@ movie_id</ColNames>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>3401</StateNumber>
-      <SequenceId>18244</SequenceId>
+      <StateNumber>3428</StateNumber>
+      <SequenceId>18285</SequenceId>
       <TypeId>23</TypeId>
     </column>
     <column id="308" parent="275" name="person_id">
       <DasType>integer|0s</DasType>
       <Position>2</Position>
-      <StateNumber>3401</StateNumber>
+      <StateNumber>3428</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="309" parent="275" name="item_name">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>3401</StateNumber>
+      <StateNumber>3428</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <foreign-key id="310" parent="275" name="item_person_id_fkey">
       <ColNames>person_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18250</ObjectId>
+      <ObjectId>18291</ObjectId>
       <OnDelete>set-null</OnDelete>
       <RefColNames>id</RefColNames>
       <RefColPositions>1</RefColPositions>
-      <StateNumber>3401</StateNumber>
-      <RefTableId>18236</RefTableId>
+      <StateNumber>3428</StateNumber>
+      <RefTableId>18277</RefTableId>
       <RefTableName>person</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
     <index id="311" parent="275" name="item_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18248</ObjectId>
+      <ObjectId>18289</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>3401</StateNumber>
+      <StateNumber>3428</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="312" parent="275" name="item_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18249</ObjectId>
+      <ObjectId>18290</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>3401</StateNumber>
-      <UnderlyingIndexId>18248</UnderlyingIndexId>
+      <StateNumber>3428</StateNumber>
+      <UnderlyingIndexId>18289</UnderlyingIndexId>
     </key>
     <check id="313" parent="276" name="movie_year_of_production_check">
       <ColNames>year_of_production</ColNames>
@@ -4685,71 +4685,83 @@ movie_id</ColNames>
     </key>
     <check id="326" parent="278" name="person_age_check">
       <ColNames>age</ColNames>
-      <ObjectId>18239</ObjectId>
+      <ObjectId>18280</ObjectId>
       <Predicate>age &gt; 0</Predicate>
-      <StateNumber>3400</StateNumber>
+      <StateNumber>3427</StateNumber>
     </check>
     <column id="327" parent="278" name="id">
       <DasType>integer|0s</DasType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>3400</StateNumber>
-      <SequenceId>18235</SequenceId>
+      <StateNumber>3427</StateNumber>
+      <SequenceId>18276</SequenceId>
       <TypeId>23</TypeId>
     </column>
     <column id="328" parent="278" name="name">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>3400</StateNumber>
+      <StateNumber>3427</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="329" parent="278" name="age">
       <DasType>integer|0s</DasType>
       <Position>3</Position>
-      <StateNumber>3400</StateNumber>
+      <StateNumber>3427</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="330" parent="278" name="email">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>3400</StateNumber>
+      <StateNumber>3427</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="331" parent="278" name="person_pkey">
+    <column id="331" parent="278" name="date_of_birth">
+      <DasType>date|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>3427</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="332" parent="278" name="created_at">
+      <DasType>timestamp|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>3427</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="333" parent="278" name="person_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18240</ObjectId>
+      <ObjectId>18281</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>3400</StateNumber>
+      <StateNumber>3427</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="332" parent="278" name="person_email_key">
+    <index id="334" parent="278" name="person_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18242</ObjectId>
-      <StateNumber>3400</StateNumber>
+      <ObjectId>18283</ObjectId>
+      <StateNumber>3427</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="333" parent="278" name="person_pkey">
+    <key id="335" parent="278" name="person_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18241</ObjectId>
+      <ObjectId>18282</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>3400</StateNumber>
-      <UnderlyingIndexId>18240</UnderlyingIndexId>
+      <StateNumber>3427</StateNumber>
+      <UnderlyingIndexId>18281</UnderlyingIndexId>
     </key>
-    <key id="334" parent="278" name="person_email_key">
+    <key id="336" parent="278" name="person_email_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18243</ObjectId>
-      <StateNumber>3400</StateNumber>
-      <UnderlyingIndexId>18242</UnderlyingIndexId>
+      <ObjectId>18284</ObjectId>
+      <StateNumber>3427</StateNumber>
+      <UnderlyingIndexId>18283</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
