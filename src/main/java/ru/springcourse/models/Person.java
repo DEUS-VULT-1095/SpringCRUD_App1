@@ -4,6 +4,8 @@ package ru.springcourse.models;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "Person")
 public class Person {
@@ -25,19 +27,16 @@ public class Person {
     @NotEmpty(message = "Should not be empty")
     @Column(name = "email")
     private String email;
-
-    @Pattern(regexp = "[A-Z]\\w+, [A-Z]\\w+, \\d{6}",
-            message = "Your address should be this format: County, City, Postal Code (6 digits)")
-    private String address;
+    @OneToMany(mappedBy = "owner")
+    private List<Item> items;
 
     public Person() {
     }
 
-    public Person(String name, int age, String email, String address) {
+    public Person(String name, int age, String email) {
         this.name = name;
         this.age = age;
         this.email = email;
-        this.address = address;
     }
 
     public int getId() {
@@ -72,11 +71,21 @@ public class Person {
         this.email = email;
     }
 
-    public String getAddress() {
-        return address;
+    public List<Item> getItems() {
+        return items;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
