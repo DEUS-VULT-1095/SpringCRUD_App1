@@ -3,10 +3,7 @@ package ru.springcourse.models;
 
 import jakarta.persistence.*;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 @Entity
 @Table(name = "Person")
@@ -25,13 +22,22 @@ public class Person {
     @Column(name = "age")
     private int age;
 
+    @Email(message = "Email should be valid")
+    @Column(name = "email")
+    private String email;
+
+    @Pattern(regexp = "[A-Z]\\w+, [A-Z]\\w+, \\d{6}",
+            message = "Your address should be this format: County, City, Postal Code (6 digits)")
+    private String address;
+
     public Person() {
     }
 
-    public Person(int id, String name, int age) {
-        this.id = id;
+    public Person(String name, int age, String email, String address) {
         this.name = name;
         this.age = age;
+        this.email = email;
+        this.address = address;
     }
 
     public int getId() {
@@ -56,5 +62,21 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
