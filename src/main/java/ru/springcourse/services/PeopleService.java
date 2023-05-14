@@ -1,9 +1,11 @@
 package ru.springcourse.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import ru.springcourse.models.Mood;
 import ru.springcourse.models.Person;
 import ru.springcourse.repositories.PeopleRepository;
 
@@ -26,6 +28,10 @@ public class PeopleService {
         return peopleRepository.findAll();
     }
 
+    public List<Person> findAll(Pageable var1) {
+        return peopleRepository.findAll(var1).getContent();
+    }
+
     public Person findOne(int id) {
         Optional<Person> foundPerson = peopleRepository.findById(id);
         return foundPerson.orElse(null);
@@ -38,7 +44,6 @@ public class PeopleService {
 
     @Transactional
     public void save(Person person) {
-        person.setMood(Mood.CALM);
         person.setCreatedAt(new Date());
         peopleRepository.save(person);
     }

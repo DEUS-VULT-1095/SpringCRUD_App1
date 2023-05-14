@@ -2,10 +2,13 @@ package ru.springcourse.controller;
 
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import ru.springcourse.dao.PersonDAO;
 import ru.springcourse.models.Person;
 import ru.springcourse.services.ItemService;
 import ru.springcourse.services.PeopleService;
@@ -19,17 +22,20 @@ public class PeopleController {
     private final PeopleService peopleService;
     private final ItemService itemService;
     private final PersonValidator personValidator;
+    private final PersonDAO personDAO;
 
     @Autowired
-    public PeopleController(PeopleService peopleService, ItemService itemService, PersonValidator personValidator) {
+    public PeopleController(PeopleService peopleService, ItemService itemService, PersonValidator personValidator, PersonDAO personDAO) {
         this.peopleService = peopleService;
         this.itemService = itemService;
         this.personValidator = personValidator;
+        this.personDAO = personDAO;
     }
 
     @GetMapping()
     public String index(Model model) {
-        model.addAttribute("people", peopleService.findAll());
+        //model.addAttribute("people", peopleService.findAll());
+        model.addAttribute("people", peopleService.findAll(PageRequest.of(1, 1, Sort.by("age"))));
         return "people/index";
     }
 

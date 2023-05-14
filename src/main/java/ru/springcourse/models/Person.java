@@ -37,8 +37,6 @@ public class Person {
     @Column(name = "created_at")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdAt;
-    @Enumerated(EnumType.STRING)
-    private Mood mood;
     @OneToMany(mappedBy = "owner")
     private List<Item> items;
 
@@ -107,13 +105,6 @@ public class Person {
         this.createdAt = createdAt;
     }
 
-    public Mood getMood() {
-        return mood;
-    }
-
-    public void setMood(Mood mood) {
-        this.mood = mood;
-    }
 
     @Override
     public String toString() {

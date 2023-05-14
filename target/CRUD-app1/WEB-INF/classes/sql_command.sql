@@ -16,15 +16,17 @@ CREATE TABLE Item(
                      item_name VARCHAR (100) NOT NULL
 );
 
-INSERT INTO Person(name, age, email)
-VALUES ('Tom', 25, 'tom@mail.com'),
-       ('Bob', 31, 'bob1@mail.com'),
-       ('Bob', 53, 'bob2@mail.com'),
-       ('Bob', 20, 'bob3@mail.com'),
-       ('Katy', 14, 'katy@mail.com');
+INSERT INTO Person(name, age, email) VALUES ('Tom', 25, 'tom@mail.com');
+INSERT INTO Person(name, age, email) VALUES ('Bob', 31, 'bob1@mail.com');
+INSERT INTO Person(name, age, email) VALUES ('Bob', 20, 'bob3@mail.com');
+INSERT INTO Person(name, age, email) VALUES ('Katy', 14, 'katy@mail.com');
+
 
 INSERT INTO Item(person_id, item_name) VALUES (1, 'Airpods');
-INSERT INTO Item(person_id, item_name) VALUES (1, 'Playstation');
-INSERT INTO Item(person_id, item_name) VALUES (1, 'TV');
+INSERT INTO Item(person_id, item_name) VALUES (3, 'Playstation');
+INSERT INTO Item(person_id, item_name) VALUES (3, 'TV');
+INSERT INTO Item(person_id, item_name) VALUES (1, 'Book');
+INSERT INTO Item(person_id, item_name) VALUES (3, 'Kindle');
+INSERT INTO Item(person_id, item_name) VALUES (2, 'Iphone');
 
 
